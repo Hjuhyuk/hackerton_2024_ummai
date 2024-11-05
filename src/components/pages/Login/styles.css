@@ -1,0 +1,120 @@
+#root {
+  display: block; /* block 레이아웃 */
+  width: 100%;
+  text-align: center; /* 가로 중앙 정렬 */
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: #fef0f0;
+}
+
+.login-container {
+  display: inline-block; /* 중앙에 맞추기 위해 inline-block 사용 */
+  width: 100%;
+  max-width: 400px; /* 최대 너비 설정 */
+  margin-top: 50px; /* 세로축으로 살짝 내림 */
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  padding: 0 20px;
+  text-align: left; /* 내부 요소의 텍스트 정렬 */
+}
+
+.id-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.password-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.login-icon,
+.password-icon {
+  position: absolute;
+  top: 8px;
+  color: #666;
+}
+
+.show-password,
+.hide-password {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.forgot-myInfo {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+span {
+  color: #666;
+  font-size: 9px;
+}
+
+/* 반응형 미디어 쿼리 추가 */
+
+/* 태블릿 크기 (화면 너비가 768px 이하일 때) */
+@media (max-width: 768px) {
+  .login-container {
+    max-width: 350px;
+    padding: 0 15px;
+  }
+
+  .login-icon,
+  .password-icon {
+    top: 10px;
+  }
+
+  .show-password,
+  .hide-password {
+    top: 10px;
+    right: 10px;
+  }
+
+  span {
+    font-size: 8px;
+  }
+}
+
+/* 모바일 크기 (화면 너비가 480px 이하일 때) */
+@media (max-width: 480px) {
+
+  .login-container {
+    max-width: 90%;
+    padding: 0 10px;
+  }
+
+  .login-icon,
+  .password-icon {
+    top: 12px;
+  }
+
+  .show-password,
+  .hide-password {
+    top: 12px;
+    right: 12px;
+  }
+
+  span {
+    font-size: 7px;
+  }
+
+  .active-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}

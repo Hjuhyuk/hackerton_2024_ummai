@@ -1,0 +1,9 @@
+select {
+  padding: 8px 5px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #666;
+  box-sizing: border-box;
+  width: 60%;
+}

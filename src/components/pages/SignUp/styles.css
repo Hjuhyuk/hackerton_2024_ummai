@@ -1,0 +1,56 @@
+.signUp-form-container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form,
+.password-form {
+  margin-bottom: 16px;
+}
+
+.num-form {
+  position: relative;
+}
+
+.num-icon {
+  position: absolute;
+  top: 8px;
+  color: #666;
+  font-size: 18px;
+}
+
+.name-form {
+  position: relative;
+}
+
+.name-icon {
+  position: absolute;
+  top: 8px;
+  color: #666;
+  font-size: 18px;
+}
+
+.country-form {
+  margin-bottom: 24px;
+}
+
+.confirmPass-form {
+  position: relative;
+}
+
+.login-icon {
+  position: absolute;
+}
+
+.email-form {
+  position: relative;
+}
+
+.email-icon {
+  position: absolute;
+  top: 8px;
+  color: #666;
+}
